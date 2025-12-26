@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Tài Xỉu - Chill Zone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="auth">
+  <h2>Tài Xỉu 🎲</h2>
+  <input id="user" placeholder="Tài khoản">
+  <input id="pass" type="password" placeholder="Mật khẩu">
+  <button onclick="login()">Đăng nhập</button>
+  <button onclick="register()">Đăng ký</button>
+</div>
+
+<div id="game" class="hidden">
+  <h2>Xin chào <span id="username"></span></h2>
+  <p>Số dư: <b id="balance"></b> coin</p>
+
+  <input id="bet" type="number" placeholder="Tiền cược">
+  <br><br>
+  <button onclick="play('tai')">TÀI</button>
+  <button onclick="play('xiu')">XỈU</button>
+
+  <h3 id="result"></h3>
+
+  <h4>Cầu:</h4>
+  <div id="road"></div>
+
+  <h4>Lịch sử:</h4>
+  <ul id="history"></ul>
+
+  <hr>
+  <h4>Admin</h4>
+  <select id="adminResult">
+    <option value="">Random</option>
+    <option value="tai">Ép Tài</option>
+    <option value="xiu">Ép Xỉu</option>
+  </select>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
